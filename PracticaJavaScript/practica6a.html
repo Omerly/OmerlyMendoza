@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario: Omerly Mendoza 26.305.062</title>
+		<meta charset="utf-8" />
+        <script language="JavaScript" src ="js/archivos.js"> </script>
+	</head>
+	<body>
+		<form name="formulario" >
+        <h2>Formulario de Registro</h2>
+        <h4>Definido en un archivo .js</h4>
+        <h4>Omerly Mendoza 26.306.062</h4>
+        <font face=Arial size=3px>
+        <p> 
+            <b>Ficha o Código:</b><br> 
+            <input type="text" maxlength=8 placeholder="Ficha o Código" name="ficha" style="padding:15px; border:3px solid darkblue; margen-top:100px; margen-bottom:100px">
+        </p>
+        
+        <p> 
+           	<b>Nombre:</b><br>
+            <input type="text" maxlength=20 placeholder="Nombre" name="nombre" style="padding:15px; border:3px solid darkblue; margen-top:100px; margen-bottom:100px" onkeypress="return letras(event)" onpaste="return false">
+            <br><b style="font-size: 10px; color: gray">Se perimiten solamente letras</b><br>
+        </p>
+        
+        <p> 
+            <b>Apellido:</b><br>
+            <input type="text" maxlength=20 placeholder="Apellido" name="apellido" style="padding:15px; border:3px solid darkblue; margen-top:100px; margen-bottom:100px" onkeypress="return letras(event)" onpaste="return false">
+            <br><b style="font-size: 10px; color: gray">Se perimiten solamente letras</b><br>
+        </p>
+            
+        <p> 
+            <b>Edad:</b><br>
+            <input type="text" maxlength=2 placeholder="Edad" name="edad" style="padding:15px; border:3px solid darkblue; margen-top:100px; margen-bottom:100px" onkeypress="return numerico(event)" onpaste="return false">
+            <br><b style="font-size: 10px; color: gray">Se perimiten solamente números</b><br>
+        </p>
+        
+        <p> 
+            <b>Departamento:</b><br>
+            <select name="Departamento" style="padding:15px; border:3px solid darkblue; margen-top:100px; margen-bottom:100px; width: 200px;">
+                <option>Recursos Humanos</option>
+                <option>Innovación</option>
+                <option>Gerencia</option>
+            </select>
+        </p>
+        
+        <p> 
+            <b>Género:</b><br>
+            <input name="Respuesta1" type=radio placeholder="M" value="m" checked>M<br> 
+            <input name="Respuesta1" type=radio placeholder="F" value="f">F<br> 
+        </p>
+        
+        <p> 
+            <b>Venezolano:</b><br>
+            <input name="Respuesta2" type=radio placeholder="Si" value="si" checked>Si<br> 
+            <input name="Respuesta2" type=radio placeholder="No" value="no">No<br>
+        </p>
+        </font>
+        <input type="button" value="Grabar" name="botong"  style="background:green; border:3px solid black; width: 100px; height: 35px; border-radius: 5px; font-size: 18px" onClick="validar()">
+        
+        <input type="reset" value="Reiniciar" name="botonr" style="background:skyblue; border:3px solid black; width: 100px; height: 35px; border-radius: 5px; font-size: 18px; font-face:Arial" onClick="alert('Formulario reiniciado')">
+        
+        <!-- Cabe destacar que existe otra función para los botones generales: button -->
+        </form>
+	</body>
+</html>
